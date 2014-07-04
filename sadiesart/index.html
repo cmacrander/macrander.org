@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Sadie Macrander</title>
+
+        <link rel="stylesheet" href="css/pure-0.5.0.min.css">
+        <link rel="stylesheet" href="css/gallery.css">
+
+        <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+        <script type="text/javascript">
+
+function switchToAboutMode() {
+    $('#image2, #image3, #image6, #image7, #text4').hide();
+    $('#text1, #text2, #text3, #text5').show();
+}
+
+function switchToHomeMode() {
+    $('#image2, #image3, #image6, #image7, #text4').show();
+    $('#text1, #text2, #text3, #text5').hide();
+}
+
+function overlay(target) {
+    $('#overlay').show();
+    $('#overlay img').attr('src', target.src);
+}
+
+function closeOverlay() {
+    $('#overlay').hide();
+}
+
+        </script>
+
+        <style>
+
+body {
+    background-color: rgb(49, 49, 49);
+}
+
+#overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    display: none;
+    top: 0px;
+    left: 0px;
+    padding: 100px;
+}
+
+#overlay img {
+    width: 100%;
+}
+
+#signature {
+    height: 100px;
+}
+
+.max-width {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.text-box p {
+    color: white;
+    padding: 30px;
+    font-family: garamond;
+    font-size: 1.25em;
+}
+
+.text-box p.text-box-subhead {
+    padding: 0;
+    color: rgb(255, 190, 94);
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.text-box p.pseudo-link {
+    font-family: sans-serif;
+    cursor: pointer;
+    color: rgb(255, 190, 94);
+    font-size: 1em;
+}
+
+.footer a, .footer a:visited, .footer a:hover {
+    color: #666;
+}
+
+        </style>
+    </head>
+    <body>
+
+<div>
+
+    <div class="max-width pure-g">
+        <div id="image1"
+             class="photo-box pure-u-1 pure-u-med-1-3 pure-u-lrg-1-4">
+            <img src="images/train.jpg" style="margin-top:-133px"
+                 alt="train" onclick="overlay(this)">
+
+            <aside class="photo-box-caption">
+                <!-- <span>by <a href="http://www.dillonmcintosh.tumblr.com/">Dillon McIntosh</a></span> -->
+            </aside>
+        </div>
+
+        <div id="title"
+             class="text-box pure-u-1 pure-u-med-2-3 pure-u-lrg-3-4">
+            <div class="l-box">
+                <img id="signature" src="images/signature.png">
+                <h1 class="text-box-head">Sadie Anderson</h1>
+                <p class="text-box-subhead">A collection of works in paper and paint</p>
+            </div>
+        </div>
+
+        <div id="image2"
+             class="photo-box pure-u-1 pure-u-med-1-2 pure-u-lrg-1-3">
+            <img src="images/books-anne.jpg"
+                 alt="Flowers" onclick="overlay(this)">
+
+            <aside class="photo-box-caption">
+<!--                 <span>
+                    by <a href="http://ngkhanhlinh.dunked.com/">Linh Nguyen</a>
+                </span>
+ -->                
+            </aside>
+        </div>
+
+        <div id="image3"
+             class="photo-box pure-u-1 pure-u-med-1-2 pure-u-lrg-1-3">
+            <img src="http://24.media.tumblr.com/23e3f4bb271b8bdc415275fb7061f204/tumblr_mve3rvxwaP1st5lhmo1_1280.jpg"
+                 alt="City" onclick="overlay(this)">
+
+            <aside class="photo-box-caption">
+<!--                 <span>
+                    by <a href="http://www.nilssonlee.se/">Jonas Nilsson Lee</a>
+                </span>
+ -->                
+            </aside>
+        </div>
+
+        <div id="text1" class="text-box pure-u-1 pure-u-lrg-2-3"
+             style="display:none">
+            <p>
+                From the time when I was very young, I
+                have loved creating art. I love the process- being inspired by
+                something I see, someone I know, something someone says, and
+                expanding that into an image. I love the actual craft of creating-
+                holding the brush or knife and building something that expresses
+                my idea.
+            </p>
+        </div>
+
+        <div id="image4"
+             class="photo-box pure-u-1 pure-u-med-1-2 pure-u-lrg-1-3">
+            <img src="images/books-favorites.jpg" style="margin-top:0" class="pure-img"
+                 alt="kids' books" onclick="overlay(this)">
+
+            <aside class="photo-box-caption">
+<!--                 <span>
+                    by <a href="http://www.flickr.com/photos/rulasibai/">Rula Sibai</a>
+                </span>
+ -->                
+            </aside>
+        </div>
+
+        <div id="image5"
+             class="photo-box pure-u-1 pure-u-med-1-2 pure-u-lrg-1-3">
+            <img src="images/family.jpg" style="margin-top:-120px"
+                 alt="family" onclick="overlay(this)">
+
+            <aside class="photo-box-caption">
+<!--                 <span>
+                    by <a href="http://www.flickr.com/photos/charliefoster/">Charlie Foster</a>
+                </span>
+ -->                
+            </aside>
+        </div>
+
+        <div id="image6"
+             class="photo-box photo-box-thin pure-u-1 pure-u-lrg-2-3">
+            <img src="images/books-kids.jpg" style="margin-top:-90px"
+                 alt="Balloons" onclick="overlay(this)">
+
+            <aside class="photo-box-caption">
+<!--                 <span>
+                    by <a href="http://ngkhanhlinh.dunked.com/">Linh Nguyen</a>
+                </span>
+ -->                
+            </aside>
+        </div>
+
+        <div id="text2"
+             class="text-box pure-u-1 pure-u-lrg-2-3" style="display:none">
+            <p>
+
+                I particularly love creating custom work that will mean something
+                special to its owner. Because my focus is on custom work, I am
+                happy to work with you to create a piece that fits your desires
+                and budget. Please do not hesitate to contact me with questions
+                or thoughts, I would love to hear from you!
+
+            </p>
+        </div>
+
+        <div id="image7"
+             class="photo-box photo-box-thin pure-u-1 pure-u-med-2-3">
+            <img src="images/books-molly.jpg" style="margin-top:-90px"
+                 alt="more books" onclick="overlay(this)">
+
+            <aside class="photo-box-caption">
+<!--                 <span>
+                    by <a href="http://twitter.com/iBoZR">Thanun Buranapong</a>
+                </span>
+ -->                
+            </aside>
+        </div>
+
+        <div id="text3"
+             class="text-box pure-u-1 pure-u-lrg-2-3" style="display:none">
+            <form class="pure-form pure-form-stacked">
+                <fieldset style="padding:30px">
+                    <label for="email_body">Send me an email:</label>
+                    <textarea id="email_body" style="width:75%"></textarea>
+                    <button type="submit" class="pure-button pure-button-primary">
+                        Send
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="text4" class="text-box pure-u-1 pure-u-med-1-3">
+            <p class="pseudo-link"
+               style="text-align:center;margin-top:80px;font-size:2.5em"
+               onclick="switchToAboutMode()">
+                About
+            </p>
+        </div>
+
+        <div id="text5" class="text-box pure-u-1 pure-u-med-1-3" style="display:none">
+            <p class="pseudo-link"
+               style="text-align:center;margin-top:80px;font-size:2.5em"
+               onclick="switchToHomeMode()">
+                View All
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        Built by <a href="http://chris.macrander.org">Chris</a>.
+    </div>
+</div>
+
+<div id="overlay" class="pure-g" onclick="closeOverlay()">
+    <div class="pure-u-1">
+        <img class="pure-img">
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>                                                                
+<html lang="en">                                                               
+    <meta charset="utf-8">                                                     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <head>                                                                     
+        <title>Chris Macrander</title>                                         
+                                                                               
+        <link rel="stylesheet" href="/css/pure-0.4.2.min.css">                 
+
+        <style>
+.vertical {
+    -webkit-transform: rotate(-90deg);   
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+
+    -webkit-transform-origin: left top 0;   
+    -moz-transform-origin: left top 0;   
+    -ms-transform-origin: left top 0;   
+    -o-transform-origin: left top 0;   
+    transform-origin: left top 0;   
+
+    position: relative;
+    writing-mode: bt-rl;
+}
+
+#page_container {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    max-width: 1400px;
+    max-height: 1500px;
+}
+
+#main_grid {
+    position: relative;
+    height: 100%;
+}
+
+#left_bar {
+    /*background-image: url('image/baker_wa-small.jpg');*/
+    background-image: url('image/baker_wa-medium.jpg');
+}
+
+#name {
+    color: white;
+    font-size: 4em;
+    top: 430px;
+    width: 600px;
+}
+
+@media (min-width: 500px) {
+  #left_bar {
+    background-image: url('image/baker_wa-medium.jpg');
+  }
+}
+@media (min-width: 800px) {
+  #left_bar {
+    background-image: url('image/baker_wa-large.jpg');
+  }
+}
+
+        </style>
+    </head>                                                                    
+    <body>                                                                     
+                                                                               
+<div id="page_container">
+    <div id="main_grid" class="pure-g">  
+        <div id="left_bar" class="pure-u-1-5" style="background-color:black">
+            <div style="border:1px solid yellow;position: relative">
+                <p id="name" class="vertical">Chris Macrander</p>
+            </div>
+        </div>
+        <div id="main_content" class="pure-u-4-5">
+            right
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
