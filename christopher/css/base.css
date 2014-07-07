@@ -1,0 +1,119 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+h1 {
+    font-family: 'cinzelregular';
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+/* Annoying that "pure" has font-family rules */
+.pure-g [class *="pure-u"] {
+    font-family: inherit;
+}
+
+.padding-left {
+    padding-left: 20px;
+}
+
+.title {
+    font-size: 1.4em;
+}
+
+.dropcap {
+    float: left;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+.blog {
+    font-family: 'Georiga', serif;
+    /*margin-left: 0.3em;*/
+}
+
+.code {
+    font-family: 'Courier', monospace;
+}
+
+.contact {
+    font-family: 'Arial', sans-serif;
+    /*margin-left: 0.4em;*/
+}
+
+.hidden-label {
+    visibility: hidden;
+}
+
+*:hover > .hidden-label {
+    visibility: visible;
+}
+
+#layout {
+    height: 100%;
+}
+
+#banner {
+    box-shadow: 2px 2px 3px #aaaaaa;
+}
+
+#banner p {
+    font-family: 'cinzel_decorativeregular';
+}
+
+#text_div {
+    font-size: 1.75em;
+    z-index: 1;  /* otherwise overflow text goes beneath background image */
+    white-space: nowrap;
+    position: relative;
+}
+
+#text_div .hidden-label {
+    font-size: 0.75em;
+}
+
+#absolute_icon_div {
+    position: absolute;
+    top: 8em;
+    left: 2em;
+    text-align: center;
+}
+
+#background_div {
+    background-image: url('../image/headshot-gradient-xsmall.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 300px;
+}
+
+@media (min-width: 568px) {
+    #background_div {
+        background-image: url('../image/headshot-gradient-small.jpg');
+        height: 450px;
+    }
+}
+
+@media (min-width: 768px) {
+    #background_div {
+        background-image: url('../image/headshot-gradient-medium.jpg');
+        height: 650px;
+    }
+}
+
+#main p {
+    font-family: 'George', serif;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    padding: 0 10px;
+}
