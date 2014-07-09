@@ -1,3 +1,10 @@
+@font-face {
+ font-family: "Georgia Pro Light";
+ src: url("http://wac.6a25.edgecastcdn.net/006A25/webtype/ff/3/6fea8d96-8b13-451e-9fff-12c56705d170") format("woff");
+ font-style: normal;
+ font-weight: normal;
+}
+
 html {
     height: 100%;
 }
@@ -12,7 +19,7 @@ a {
 }
 
 h1 {
-    font-family: 'cinzelregular';
+    font-family: 'geometria_lightlight';
     font-weight: normal;
     margin-top: 40px;
 }
@@ -27,20 +34,20 @@ h1 {
 }
 
 .title {
-    font-size: 1.4em;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
 }
 
 .dropcap {
     float: left;
     font-size: 1.2em;
     line-height: 1.2em;
-    padding-right: 8px;
+    padding-right: 5px;
     padding-left: 3px;
 }
 
 .blog {
     font-family: 'Georiga', serif;
-    /*margin-left: 0.3em;*/
 }
 
 .code {
@@ -49,15 +56,6 @@ h1 {
 
 .contact {
     font-family: 'Arial', sans-serif;
-    /*margin-left: 0.4em;*/
-}
-
-.hidden-label {
-    visibility: hidden;
-}
-
-*:hover > .hidden-label {
-    visibility: visible;
 }
 
 #layout {
@@ -69,7 +67,8 @@ h1 {
 }
 
 #banner p {
-    font-family: 'cinzel_decorativeregular';
+    font-family: 'geometria_lightlight';
+    /*font-family: 'garogierregular';*/
 }
 
 #text_div {
@@ -77,10 +76,6 @@ h1 {
     z-index: 1;  /* otherwise overflow text goes beneath background image */
     white-space: nowrap;
     position: relative;
-}
-
-#text_div .hidden-label {
-    font-size: 0.75em;
 }
 
 #absolute_icon_div {
@@ -112,8 +107,12 @@ h1 {
 }
 
 #main p {
-    font-family: 'George', serif;
+    font-family: 'Georgia Pro Light', 'Georgia' serif;
     font-size: 1.25em;
     line-height: 1.25em;
     padding: 0 10px;
+}
+
+#main p a {
+    text-decoration: underline;
 }
