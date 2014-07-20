@@ -13,18 +13,13 @@ body {
     height: 100%;
 }
 
-a {
-    color: inherit;
-    text-decoration: inherit;
-}
-
 h1 {
     font-family: 'geometria_lightlight';
     font-weight: normal;
     margin-top: 40px;
 }
 
-/* Annoying that "pure" has font-family rules */
+/* "pure" has font-family rules; override them */
 .pure-g [class *="pure-u"] {
     font-family: inherit;
 }
@@ -68,7 +63,6 @@ h1 {
 
 #banner p {
     font-family: 'geometria_lightlight';
-    /*font-family: 'garogierregular';*/
 }
 
 #text_div {
@@ -84,6 +78,12 @@ h1 {
     left: 1em;
     text-align: center;
 }
+
+#absolute_icon_div a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 
 #background_div {
     background-image: url('../image/headshot-gradient-xsmall.jpg');
@@ -106,7 +106,7 @@ h1 {
     }
 }
 
-#main p {
+#main p, #main li {
     font-family: 'Georgia Pro Light', 'Georgia' serif;
     font-size: 1.25em;
     line-height: 1.25em;
