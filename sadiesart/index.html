@@ -119,6 +119,11 @@ body {
     font-size: 1em;
 }
 
+.text-box p.pseudo-link a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
 .photo-box {
     /*cursor: pointer;*/
 }
@@ -304,7 +309,7 @@ body:before {
             <p class="pseudo-link"
                style="text-align:center;margin-top:80px;font-size:2.5em"
                onclick="switchToAboutMode()">
-                About
+                <a href="#text1">About</a>
             </p>
         </div>
 
@@ -312,7 +317,7 @@ body:before {
             <p class="pseudo-link"
                style="text-align:center;margin-top:80px;font-size:2.5em"
                onclick="switchToHomeMode()">
-               Home
+                <a href="#">Home</a>
             </p>
         </div>
     </div>
